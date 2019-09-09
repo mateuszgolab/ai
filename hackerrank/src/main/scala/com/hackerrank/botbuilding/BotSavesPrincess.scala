@@ -10,7 +10,7 @@ object BotSavesPrincess {
     for (i <- 0 until m) {
       grid.update(i, scala.io.StdIn.readLine())
     }
-    displayPathtoPrincess(m, grid)
+    displayPathtoPrincess(m, grid).foreach(e => Console.out.println(e))
   }
 
 
